@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/myfunctions.js"></script>
+</head>
+
+<body>
+    <h1>Page3</h1>
+    <h2>Reading from localstorage</h2>
+    <button onclick="getNameFromLocalStorage()">Read</button>
+
+    <h2>Dropdown</h2>
+    <select name="" id="countries" onchange="saveContry()">
+        <option value="">Choose country</option>
+        <option value="fin">Finland</option>
+        <option value="swe">Sweden</option>
+        <option value="nor">Norway</option>
+    </select>
+    <button onclick="saveContry()">Save</button>
+    <br>
+    <input type="text" id="selectedCountry" value="">
+
+    <h2>Radio buttons</h2>
+
+    <input type="radio" id="huey" name="drone" value="huey">
+    <label for="huey">Huey</label>
+    <br>
+    <input type="radio" id="dewey" name="drone" value="dewey">
+    <label for="dewey">Dewey</label>
+    <br>
+    <input type="radio" id="louie" name="drone" value="louie">
+    <label for="louie">Louie</label>
+    <br>
+    <button onclick="showSelectedRadio()">Show selected</button>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="js/myfunctions.js"></script>
+</head>
+<body>
+    <h1>Page2</h1>
+    <div id="abc">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, molestiae? Aperiam incidunt nulla et, debitis ipsam sint, laborum voluptatibus aut ducimus alias quos veniam accusantium, voluptas sit consequatur harum velit.
+        </p>
+        <p>
+            <a href="first.html">Back to page1</a>
+        </p>
+    </div>
+    <h2>Some JavaScript</h2>
+    <button onclick="clicButton1()">Click Me</button>
+    <p id="result"></p>
+    <button id="btnHide" onclick="hideAbc()">Hide abc</button>
+    <button id="btnShow" onclick="showAbc()" hidden="true">Show abc</button>
+    <h2>Reading from textbox</h2>
+    <p>
+        <label for="fn">Firstname</label> 
+        <input type="text" id="fn" value="" placeholder="your name">
+        <br>
+        <button onclick="clickButton2()">Send</button>
+        <br>
+        <input type="text" id="targetFn" value="">
+    </p>
+    <h2>Reading from localstorage</h2>
+    <button onclick="getNameFromLocalStorage()">Read</button>
+    <br>
+    <a href="third.html">To page3</a>
+    <br>
+    <p id="result2"></p>
+</body>
+</html>
